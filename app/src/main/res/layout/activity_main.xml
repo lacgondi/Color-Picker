@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redLabel"
+        android:text="Red: "
+        android:textSize="30dp"/>
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/redLabel"
+        android:id="@+id/redSlider"
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redSlider"
+        android:id="@+id/greenLabel"
+        android:text="Green: "
+        android:textSize="30dp"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/greenLabel"
+        android:id="@+id/greenSlider"
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greenSlider"
+        android:id="@+id/blueLabel"
+        android:text="Blue: "
+        android:textSize="30dp"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blueLabel"
+        android:id="@+id/blueSlider"
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
+        />
+
+
+
+</RelativeLayout>
