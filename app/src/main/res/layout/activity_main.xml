@@ -59,7 +59,7 @@
         android:id="@+id/blueSlider"
         android:valueFrom="0.0"
         android:valueTo="255.0"
-
+        android:stepSize="1"
         />
 
     <RelativeLayout
