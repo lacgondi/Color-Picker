@@ -37,8 +37,13 @@ public class MainActivity extends AppCompatActivity {
             public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
                 redValue = (int) red.getValue();
                 redText.setText("Red: " + redValue);
-                currentColor.setText(colorTextString(redValue, greenValue, blueValue));
-                coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                if(blueValue != 69 || greenValue != 69 || redValue != 69){
+                    currentColor.setText(colorTextString(redValue, greenValue, blueValue));
+                    coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                }else{
+                    currentColor.setText("Nice");
+                    coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                }
             }
         });
 
@@ -48,8 +53,13 @@ public class MainActivity extends AppCompatActivity {
             public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
                 greenValue = (int) green.getValue();
                 greenText.setText("Green: " + greenValue);
-                currentColor.setText(colorTextString(redValue, greenValue, blueValue));
-                coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                if(blueValue != 69 || greenValue != 69 || redValue != 69){
+                    currentColor.setText(colorTextString(redValue, greenValue, blueValue));
+                    coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                }else{
+                    currentColor.setText("Nice");
+                    coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                }
             }
         });
 
@@ -59,8 +69,13 @@ public class MainActivity extends AppCompatActivity {
             public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
                 blueValue = (int) blue.getValue();
                 blueText.setText("Blue: " + blueValue);
-                currentColor.setText(colorTextString(redValue, greenValue, blueValue));
-                coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                if (blueValue != 69 || greenValue != 69 || redValue != 69) {
+                    currentColor.setText(colorTextString(redValue, greenValue, blueValue));
+                    coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                } else {
+                    currentColor.setText("Nice");
+                    coloredLay.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
+                }
             }
         });
     }
